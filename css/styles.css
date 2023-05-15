@@ -29,8 +29,6 @@ body {
 --pagination-button-background: #F4F4FD;
 --pagination-hover-focus-color: #FFFFFF;
 --pagination-hover-focus-background:#404BBF;
---logo-hover-focus-color: #2e2f42;
---studio-hover-focus-color: #2e2f42;
 }
 .visually-hidden {
 position: absolute;
@@ -55,14 +53,6 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
-.logo-studio :hover,
-.logo-studio :focus{
-color: var(--studio-hover-focus-color);
-}
-.header-logo :hover,
-.header-logo :focus{
-color:var(--logo-hover-focus-color);
-}
 .logo {
 color: var(--header-logo-color);
 }
@@ -82,8 +72,10 @@ color: var(--link-active-color);
 .header-addres-link:active {
 color: var(--link-active-color);
 }
+.header-addres{
+font-style: normal;  
+}
 .header-addres-link {
-font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -110,12 +102,13 @@ font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
+text-align: center;
 color: var(--main-title-color);
 }
 .button-order {
 cursor: pointer;
 background-color: var(--button-order-background);
-font-family: 'Roboto';
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -132,11 +125,12 @@ background-color: var(--button-hover-focus-background);
 }
 /* section - What are we doing */
 /* section - Our team */
-.title-h2 {
+.title-h {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
+text-align: center;
 text-transform: capitalize;
 }
 .our-team {
