@@ -14,7 +14,7 @@ body {
 :root {
 --logo-color: #4D5AE5;
 --header-logo-color: #2E2F42;
---link-color: #434455;
+--link-color: #2e2f42;
 --title-background: #2E2F42;
 --main-title-color: #FFFFFF;
 --button-order-background: #4D5AE5;
@@ -32,6 +32,7 @@ body {
 --objective-item-title-color:#2e2f42;
 --job-title-color: #2e2f42;
 --team-title-color: #2e2f42;
+--our-team-list-background: #FFFFFF;
 }
 .visually-hidden {
 position: absolute;
@@ -70,11 +71,11 @@ letter-spacing: 0.02em;
 color: var(--link-color);
 }
 .header-link:hover,
-.header-link :focus {
-color: var(--link-hover-focus-color);   
+.header-link:focus {
+color: var(--link-hover-focus-color)
 }
-.header-addres-link :hover,
-.header-addres-link :focus {
+.header-addres-link:hover,
+.header-addres-link:focus {
 color: var(--link-hover-focus-color)
 }
 .header-addres{
@@ -148,6 +149,9 @@ color: var(--team-title-color);
 .our-team {
 background: var(--our-team-background)
 }
+.our-team-list {
+background-color: var(--our-team-list-background);
+}
 /* footer */
 .footer {
 background-color: var(--footer-background)}
@@ -175,9 +179,13 @@ letter-spacing: 0.04em;
 color: var(--pagination-button-color);
 background-color: var(--pagination-button-background)
 }
-.pagination-button:hover, 
-.pagination-button:focus {
+.pagination-button:hover,
+.pagination-button :focus {
 color: var(--pagination-hover-focus-color);
+}
+.pagination-button:hover,
+.pagination-button :focus{
 background-color: var(--pagination-hover-focus-background);
 }
+
  
