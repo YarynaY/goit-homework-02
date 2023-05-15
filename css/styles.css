@@ -154,7 +154,7 @@ color: var(--footer-text-color);
 /* Portfolio */
 /* maim */
 .pagination-button {
-font-family: 'Roboto';
+font-family: inherit;
 cursor: pointer;
 font-weight: 500;
 font-size: 16px;
