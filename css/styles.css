@@ -14,12 +14,12 @@ body {
 :root {
 --logo-color: #4D5AE5;
 --header-logo-color: #2E2F42;
---link-color: #2E2F42;
+--link-color: #434455;
 --title-background: #2E2F42;
 --main-title-color: #FFFFFF;
 --button-order-background: #4D5AE5;
 --button-order-color: #FFFFFF;
---link-active-color: #404BBF;
+--link-hover-focus-color: #404bbf;
 --button-hover-focus-background: #404BBF;
 --our-team-background: #F4F4FD;
 --footer-text-color: #F4F4FD;
@@ -29,6 +29,9 @@ body {
 --pagination-button-background: #F4F4FD;
 --pagination-hover-focus-color: #FFFFFF;
 --pagination-hover-focus-background:#404BBF;
+--objective-item-title-color:#2e2f42;
+--job-title-color: #2e2f42;
+--team-title-color: #2e2f42;
 }
 .visually-hidden {
 position: absolute;
@@ -66,11 +69,13 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--link-color);
 }
-.header-link:active {
-color: var(--link-active-color);   
+.header-link:hover,
+.header-link :focus {
+color: var(--link-hover-focus-color);   
 }
-.header-addres-link:active {
-color: var(--link-active-color);
+.header-addres-link :hover,
+.header-addres-link :focus {
+color: var(--link-hover-focus-color)
 }
 .header-addres{
 font-style: normal;  
@@ -120,10 +125,13 @@ color: var(--button-order-color);
 background-color: var(--button-hover-focus-background);
 }
 /* section-objective */
-.objective-title {
-
+.objective-item-title {
+color: var(--objective-item-title-color);
 }
 /* section - What are we doing */
+.job-title {
+color: var(--job-title-color)
+}
 /* section - Our team */
 .title-h {
 font-weight: 700;
@@ -132,6 +140,10 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 text-transform: capitalize;
+color: var(--team-title-color);
+}
+.team-item-title{
+color: var(--team-title-color);
 }
 .our-team {
 background: var(--our-team-background)
