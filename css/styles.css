@@ -107,7 +107,6 @@ letter-spacing: 0.02em;
 background-color: var(--title-background);
 }
 .main-title{
-font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
@@ -138,7 +137,6 @@ color: var(--job-title-color)
 }
 /* section - Our team */
 .title-h {
-font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
