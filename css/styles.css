@@ -152,7 +152,7 @@ color: var(--team-title-color);
 .our-team {
 background: var(--our-team-background)
 }
-.our-team-list {
+.our-team-item {
 background-color: var(--our-team-list-background);
 }
 /* footer */
