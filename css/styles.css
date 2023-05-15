@@ -1,6 +1,7 @@
 body {
-    font-family: "Roboto", "Raleway", "sans-serif";
-    color: black;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
 }
 /* усування . і підкреслень в посиланнях */
 .list {
@@ -11,7 +12,7 @@ body {
 }
 /* CSS - змінні */
 :root {
---logo-web-color: #4D5AE5;
+--logo-color: #4D5AE5;
 --header-logo-color: #2E2F42;
 --link-color: #2E2F42;
 --title-background: #2E2F42;
@@ -28,6 +29,8 @@ body {
 --pagination-button-background: #F4F4FD;
 --pagination-hover-focus-color: #FFFFFF;
 --pagination-hover-focus-background:#404BBF;
+--logo-hover-focus-color: #2e2f42;
+--studio-hover-focus-color: #2e2f42;
 }
 .visually-hidden {
 position: absolute;
@@ -45,18 +48,26 @@ overflow: hidden;
 /* font-style: normal - тільки для посилань; */
 /* header */
 .logo {
-font-family: 'Raleway';
+font-family: "Raleway", sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
-.logo-web {
-color: var(--logo-web-color);
+.logo-studio :hover,
+.logo-studio :focus{
+color: var(--studio-hover-focus-color);
+}
+.header-logo :hover,
+.header-logo :focus{
+color:var(--logo-hover-focus-color);
+}
+.logo {
+color: var(--header-logo-color);
 }
 .header-logo {
-color: var(--header-logo-color);
+color: var(--logo-color);
 }
 .header-link {
 font-weight: 500;
@@ -134,8 +145,11 @@ background: var(--our-team-background)
 /* footer */
 .footer {
 background-color: var(--footer-background)}
-.footer-logo {
+.footer-logo-studio {
 color: var(--footer-logo-color);
+}
+.footer-logo{
+color:  #4D5AE5;;
 }
 .footer-text {
 font-size: 16px;
